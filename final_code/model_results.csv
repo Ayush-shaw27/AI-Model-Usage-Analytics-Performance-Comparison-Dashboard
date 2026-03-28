@@ -1,0 +1,5 @@
+Model,R2_Score,RMSE
+Random Forest,0.7417,1.8031
+Linear Regression,0.7004,1.9419
+Ridge Regression,0.7004,1.9421
+Gradient Boosting,0.6991,1.9463
