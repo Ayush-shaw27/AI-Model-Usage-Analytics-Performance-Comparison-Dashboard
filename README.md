@@ -78,6 +78,9 @@ Predict model cost using:
 ---
 
 ## 🏗️ System Architecture
+
+```
+
 Raw Dataset
 ↓
 Data Preprocessing (data.py)
@@ -88,65 +91,79 @@ ML Pipeline (ml_models.py)
 ↓
 Streamlit Dashboard (app.py)
 
+```
 
 ---
 
 ## 📂 Project Structure
 
+```
 
 AI-Model-Analytics/
 │
-├── app.py # Streamlit dashboard
-├── data.py # Data preprocessing & pipeline
-├── ml_models.py # ML models & analytics
-├── final_dataset.csv # Generated dataset
+├── app.py                         # Streamlit dashboard (UI layer)
+├── data.py                        # Data preprocessing & pipeline
+├── ml_models.py                   # ML models & analytics logic
+├── final_dataset.csv              # Generated dataset (auto-created)
 │
 ├── data/
-│ ├── ai_models_performance.csv
-│ ├── open_llm_leaderboard_train.csv
+│   ├── ai_models_performance.csv
+│   ├── open_llm_leaderboard_train.csv
 │
-├── requirements.txt
-└── README.md
+├── requirements.txt              # Project dependencies
+└── README.md                     # Project documentation
 
+```
 
 ---
 
 ## 📊 Dataset
 
-This project uses **real-world datasets**:
+This project uses **real-world datasets (no synthetic data)**:
 
-### 1. AI Model Performance Dataset  
+### 1️⃣ AI Model Performance Dataset
 Contains:
-- Model name  
+- Model Name  
 - Provider  
-- Cost  
-- Speed  
-- Latency  
+- Cost (USD per 1M tokens)  
+- Speed (tokens/sec)  
+- Latency (seconds)  
 
-### 2. Open LLM Leaderboard Dataset  
+---
+
+### 2️⃣ Open LLM Leaderboard Dataset
 Contains:
 - Model evaluation scores  
 - Benchmark accuracy  
 
 ---
 
-### 📥 Dataset Links
+## 📥 Dataset Links
 
-[AI Models Dataset] : <[PASTE LINK HERE](https://www.kaggle.com/datasets/asadullahcreative/ai-models-benchmark-dataset-2026-latest)>
-[LLM Leaderboard Dataset] : <[PASTE LINK HERE](https://artificialanalysis.ai/leaderboards/providers)>
-[Open LLM Leaderboard Archived] : <[PASTE LINK HERE](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/)>
+Add your dataset links here:
 
+```
+
+AI Models Dataset: <PASTE LINK HERE>
+
+LLM Leaderboard Dataset: <PASTE LINK HERE>
+
+Open LLM Leaderboard (Archived): <PASTE LINK HERE>
+
+````
 
 ---
 
 ## 🧠 Machine Learning Concepts Used
 
-- **Clustering:** KMeans for segmentation  
-- **Regression:** Linear Regression for cost prediction  
-- **Feature Engineering:**
-  - Cost Efficiency  
-  - Speed Efficiency  
-  - Composite Score  
+- **Clustering:** KMeans (Model Segmentation)  
+- **Regression:** Linear Regression (Cost Prediction)  
+
+### Feature Engineering:
+- Cost Efficiency  
+- Speed Efficiency  
+- Composite Score  
+
 - **Outlier Detection:** Z-score method  
 
 ---
@@ -154,61 +171,64 @@ Contains:
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the Repository
-
+```bash
 git clone <your-repo-link>
 cd AI-Model-Analytics
-
+````
 
 ---
 
 ### 2. Create Virtual Environment
 
+```bash
 python -m venv .venv
 .venv\Scripts\activate
-
+```
 
 ---
 
 ### 3. Install Dependencies
 
+```bash
 pip install -r requirements.txt
-
+```
 
 ---
 
 ### 4. Run the Application
 
+```bash
 streamlit run app.py
-
+```
 
 ---
 
 ## 📈 Business Use Cases
 
-- AI model selection for companies  
-- Cost optimization in LLM usage  
-- Performance benchmarking  
-- Decision support for AI adoption  
+* AI model selection for companies
+* Cost optimization in LLM usage
+* Performance benchmarking
+* Decision support for AI adoption
 
 ---
 
 ## 💡 Key Highlights
 
-- Real-world dataset integration (no dummy data)  
-- End-to-end pipeline (Data → ML → Dashboard)  
-- Industry-level UI dashboard  
-- Decision Intelligence system  
-- Production-ready structure  
+* ✅ Real-world dataset integration (no dummy data)
+* ✅ End-to-end pipeline (Data → ML → Dashboard)
+* ✅ Industry-level UI dashboard
+* ✅ Decision Intelligence system
+* ✅ Production-ready structure
 
 ---
 
 ## 🔮 Future Enhancements
 
-- API integration for real-time model data  
-- Advanced ML models (XGBoost, Deep Learning)  
-- User authentication system  
-- Cloud deployment (AWS/GCP)  
-- Automated data updates  
+* API integration for real-time model data
+* Advanced ML models (XGBoost, Deep Learning)
+* User authentication system
+* Cloud deployment (AWS/GCP)
+* Automated data updates
 
 ---
 
