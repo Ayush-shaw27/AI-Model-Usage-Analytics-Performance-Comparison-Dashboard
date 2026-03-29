@@ -144,11 +144,10 @@ Add your dataset links here:
 
 ```
 
-AI Models Dataset: <PASTE LINK HERE>
 
-LLM Leaderboard Dataset: <PASTE LINK HERE>
-
-Open LLM Leaderboard (Archived): <PASTE LINK HERE>
+[AI Models Dataset] : <[PASTE LINK HERE](https://www.kaggle.com/datasets/asadullahcreative/ai-models-benchmark-dataset-2026-latest)>
+[LLM Leaderboard Dataset] : <[PASTE LINK HERE](https://artificialanalysis.ai/leaderboards/providers)>
+[Open LLM Leaderboard Archived] : <[PASTE LINK HERE](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/)>
 
 ````
 
