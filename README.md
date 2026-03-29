@@ -78,3 +78,146 @@ Predict model cost using:
 ---
 
 ## 🏗️ System Architecture
+Raw Dataset
+↓
+Data Preprocessing (data.py)
+↓
+Feature Engineering
+↓
+ML Pipeline (ml_models.py)
+↓
+Streamlit Dashboard (app.py)
+
+
+---
+
+## 📂 Project Structure
+
+
+AI-Model-Analytics/
+│
+├── app.py # Streamlit dashboard
+├── data.py # Data preprocessing & pipeline
+├── ml_models.py # ML models & analytics
+├── final_dataset.csv # Generated dataset
+│
+├── data/
+│ ├── ai_models_performance.csv
+│ ├── open_llm_leaderboard_train.csv
+│
+├── requirements.txt
+└── README.md
+
+
+---
+
+## 📊 Dataset
+
+This project uses **real-world datasets**:
+
+### 1. AI Model Performance Dataset  
+Contains:
+- Model name  
+- Provider  
+- Cost  
+- Speed  
+- Latency  
+
+### 2. Open LLM Leaderboard Dataset  
+Contains:
+- Model evaluation scores  
+- Benchmark accuracy  
+
+---
+
+### 📥 Dataset Links
+
+[AI Models Dataset] : <[PASTE LINK HERE](https://www.kaggle.com/datasets/asadullahcreative/ai-models-benchmark-dataset-2026-latest)>
+[LLM Leaderboard Dataset] : <[PASTE LINK HERE](https://artificialanalysis.ai/leaderboards/providers)>
+[Open LLM Leaderboard Archived] : <[PASTE LINK HERE](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/)>
+
+
+---
+
+## 🧠 Machine Learning Concepts Used
+
+- **Clustering:** KMeans for segmentation  
+- **Regression:** Linear Regression for cost prediction  
+- **Feature Engineering:**
+  - Cost Efficiency  
+  - Speed Efficiency  
+  - Composite Score  
+- **Outlier Detection:** Z-score method  
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the Repository
+
+git clone <your-repo-link>
+cd AI-Model-Analytics
+
+
+---
+
+### 2. Create Virtual Environment
+
+python -m venv .venv
+.venv\Scripts\activate
+
+
+---
+
+### 3. Install Dependencies
+
+pip install -r requirements.txt
+
+
+---
+
+### 4. Run the Application
+
+streamlit run app.py
+
+
+---
+
+## 📈 Business Use Cases
+
+- AI model selection for companies  
+- Cost optimization in LLM usage  
+- Performance benchmarking  
+- Decision support for AI adoption  
+
+---
+
+## 💡 Key Highlights
+
+- Real-world dataset integration (no dummy data)  
+- End-to-end pipeline (Data → ML → Dashboard)  
+- Industry-level UI dashboard  
+- Decision Intelligence system  
+- Production-ready structure  
+
+---
+
+## 🔮 Future Enhancements
+
+- API integration for real-time model data  
+- Advanced ML models (XGBoost, Deep Learning)  
+- User authentication system  
+- Cloud deployment (AWS/GCP)  
+- Automated data updates  
+
+---
+
+## 👨‍💻 Author
+
+**Ayush Shaw**
+
+---
+
+## ⭐ Conclusion
+
+This project demonstrates a complete **Data Analytics + Machine Learning + Product Development pipeline**
