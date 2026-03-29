@@ -142,14 +142,9 @@ Contains:
 
 Add your dataset links here:
 
-```
-
-
-[AI Models Dataset] : <(https://www.kaggle.com/datasets/asadullahcreative/ai-models-benchmark-dataset-2026-latest)>
-[LLM Leaderboard Dataset] : <(https://artificialanalysis.ai/leaderboards/providers)>
-[Open LLM Leaderboard Archived] : <(https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/)>
-
-````
+[AI Models Dataset] : https://www.kaggle.com/datasets/asadullahcreative/ai-models-benchmark-dataset-2026-latest
+[LLM Leaderboard Dataset] : https://artificialanalysis.ai/leaderboards/providers
+[Open LLM Leaderboard Archived] : https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard#/
 
 ---
 
