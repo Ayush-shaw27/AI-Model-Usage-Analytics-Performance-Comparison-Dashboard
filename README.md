@@ -12,70 +12,73 @@ An end-to-end **AI Model Analytics Dashboard** that enables users to compare, ev
 
 ## 📌 Project Overview
 
-This project is a **full-stack data analytics and machine learning platform** designed to:
+AI Model Analytics & Decision Intelligence Platform
+Author: Ayush Shaw(16014223027)
 
-- Analyze AI model performance across multiple metrics  
-- Compare models based on cost, accuracy, latency, and speed  
-- Provide intelligent recommendations  
-- Predict model cost using machine learning  
+1.	Project Overview
+The AI Model Analytics & Decision Intelligence Platform is a comprehensive Streamlit-based web dashboard designed to help users compare, rank, and select Large Language Models (LLMs) based on real-world performance metrics.
+It integrates data from Artificial Analysis and Hugging Face Open LLM Leaderboard, processes it through a clean data pipeline (data.py), applies machine learning techniques (ml_models.py), and presents interactive visualizations in a modern dark-themed UI (app.py).
+Key Features:
+•	Real-time filtering by provider, cost, accuracy, latency
+•	Composite scoring, KMeans clustering, outlier detection
+•	Cost prediction using Linear Regression
+•	Smart recommendation engine
+•	Side-by-side model comparison and radar charts 
 
-It integrates:
-- **Data Engineering Pipeline**
-- **Machine Learning Models**
-- **Interactive Dashboard (Streamlit + Plotly)**
+2. Overview Tab
+The Overview tab gives an immediate snapshot of the current filtered dataset.
+What it delivers:
+•	KPI Cards: Total models shown, average accuracy, cost per 1M tokens, latency, and speed.
+•	Quick Insights: Four intelligent highlight cards showing the most cost-efficient model, cheapest model, fastest model, and highest accuracy model.
+•	Top 10 Ranked Models: Sorted table with composite score (higher is better).
+•	Cost vs Accuracy Scatter Plot: Visual trade-off between price and performance with bubble size representing speed and color-coded clusters.
+This tab helps users instantly understand the market landscape and identify top performers without deep analysis.  
+ 
+ 
+3. Analytics Tab
+The Analytics tab provides deeper statistical insights and visualizations.
+What it delivers:
+•	Speed vs Latency Scatter: Shows the classic trade-off between response time and throughput.
+•	Top 10 Bar Chart: Horizontal bar chart of the best models by composite score.
+•	Provider Comparison: Side-by-side bar charts comparing average accuracy, cost, and latency across providers (OpenAI, Anthropic, Google, xAI, etc.).
+•	Cost Efficiency Distribution: Histogram + box plot showing how cost-efficiency is distributed across performance segments.
+•	Feature Correlation Heatmap: Pearson correlation matrix revealing relationships between accuracy, cost, latency, speed, and composite score.
+This section is extremely useful for understanding market trends and provider strengths/weaknesses.
+  
+4. ML Insights Tab
+The ML Insights tab showcases the machine learning layer of the platform.
+What it delivers:
+•	KMeans Clustering Scatter: Models automatically grouped into three segments - High-Performance, Budget, and Balanced (based on accuracy, cost, latency, and speed).
+•	Cluster Statistics Table: Detailed metrics (count, avg accuracy, cost, latency, speed, composite score) for each segment.
+•	Outlier Detection: Flags models that are unusually expensive or slow using Z-score (>2.5).
+•	Segment Radar Chart: Multi-axis radar plot comparing the three clusters across all key metrics.
+This tab demonstrates how unsupervised ML (KMeans) and statistical techniques turn raw data into actionable intelligence.
+  
+5. Model Comparison Tab
+The Model Comparison tab allows side-by-side evaluation of 2-6 selected models.
+What it delivers:
+•	Comparison Table: Clean formatted table with all key metrics.
+•	Grouped Bar Charts: One chart per metric (Accuracy, Cost, Latency, Speed, Composite Score) for visual comparison.
+•	Multi-Model Radar Chart: Overlaid radar plots showing strengths and weaknesses of each selected model at a glance.
+This is the most practical tab for decision-making when shortlisting models for a specific project.
+  
+6. Tools Tab
+The Tools tab contains two powerful decision-making utilities.
+What it delivers:
+•	Model Recommendation Engine: User inputs maximum budget and minimum accuracy → system returns the top-N best models ranked by composite score.
+•	Cost Predictor: Linear Regression model (R² displayed) that predicts cost per 1M tokens based on desired accuracy, speed, and latency.
+These tools make the dashboard not just analytical but truly prescriptive.   
+7. Conclusion
+The AI Model Analytics & Decision Intelligence Platform successfully transforms fragmented LLM benchmark data into an intuitive, interactive, and intelligent decision-support system.
+Key achievements:
+•	Clean data pipeline with realistic filtering (no zero-cost or hallucinated efficiency values).
+•	Robust ML layer (clustering, regression, outlier detection, composite scoring).
+•	Professional dark-themed UI with fully interactive Plotly visualizations.
+•	Practical tools that directly help users choose the right model under budget and performance constraints.
+This project demonstrates end-to-end skills in data engineering, machine learning, and full-stack dashboard development
 
----
 
-## 🎯 Objectives
 
-- Build a **real-world analytics system (no synthetic data)**
-- Enable **decision intelligence for AI model selection**
-- Create an **industry-ready dashboard**
-- Combine **Data + ML + UI into one system**
-
----
-
-## ⚙️ Features
-
-### 📊 1. Interactive Dashboard
-- Cost vs Accuracy visualization  
-- Speed vs Latency analysis  
-- Provider comparison  
-- Correlation heatmaps  
-
----
-
-### 🧠 2. Machine Learning Integration
-- KMeans Clustering (Model Segmentation)
-- Composite Score Ranking System
-- Outlier Detection (Z-score)
-- Linear Regression (Cost Prediction)
-
----
-
-### ⚖️ 3. Model Comparison
-- Compare multiple models side-by-side  
-- Radar charts for performance analysis  
-- Multi-metric benchmarking  
-
----
-
-### 🎯 4. Recommendation Engine
-- Input:
-  - Budget  
-  - Minimum accuracy  
-- Output:
-  - Top models ranked by performance  
-
----
-
-### 📈 5. Cost Prediction Tool
-Predict model cost using:
-- Accuracy  
-- Speed  
-- Latency  
-
----
 
 ## 🏗️ System Architecture
 
